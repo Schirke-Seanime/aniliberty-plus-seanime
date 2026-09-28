@@ -54,7 +54,8 @@ torrents for that exact season: *Dr. Stone: Science Future Part 3* no longer dra
 or *New World*. These results are marked as confirmed.
 
 Releases without a MAL ID fall back to matching by title, year and episode count. Those results
-are not marked as confirmed.
+are not marked as confirmed. A release with a *different* MAL ID is never used as a fallback: if the
+season you're watching isn't on AniLiberty, you get nothing rather than torrents of another season.
 
 ### Several title variants
 
@@ -111,6 +112,7 @@ Checked against the live AniLiberty API:
 | *Dr. Stone: Ryusui* (movie) | not a batch, episode 1 |
 | Entry without a MAL ID (*Bocchi the Rock!*) | found by title, marked unconfirmed |
 | Ongoing show, episode not in the torrent yet (`1-11`, episode 12 requested) | empty list, Seanime retries later |
+| Season that isn't on AniLiberty while other seasons are | empty list, no other season offered |
 | Title that isn't on AniLiberty | empty list, no errors |
 | Manual search "Dr. STONE" | all 17 torrents, the current season first |
 

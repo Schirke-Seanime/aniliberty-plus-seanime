@@ -187,9 +187,14 @@ class Provider {
       if (exact.length > 0) return { releases: exact, confirmed: true };
     }
 
-    // Fallback for releases without a MAL ID: compare title, year and episode count.
+    // Fallback: compare title, year and episode count. If the entry has a MAL ID,
+    // a release with a different MAL ID is a different show (e.g. another season
+    // of the same franchise), so only releases without a MAL ID are considered.
+    const pool = media && media.idMal
+      ? releases.filter(r => !(r.mal && r.mal.id))
+      : releases;
     const scored: { r: any; s: number }[] = [];
-    for (const r of releases) {
+    for (const r of pool) {
       const s = this.score(r, media);
       if (s > 0) scored.push({ r, s });
     }
