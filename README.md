@@ -74,7 +74,11 @@ AniLiberty often splits a season into several torrents. For example, *Dr. Stone*
 `1-13`, `14-24` and a full `1-24` batch. When you open episode 20, you get only the torrents that
 contain episode 20: `14-24` and `1-24`.
 
-Resolution and batch filters are supported as well. If a filter would leave nothing, the provider
+On ongoing shows the torrent can lag behind the site: episode 12 is already out, but the torrent
+still covers `1-11`. In that case the provider returns nothing rather than a torrent that doesn't contain
+the episode, and Seanime keeps checking again until AniLiberty updates the torrent.
+
+Resolution and batch filters are supported as well. If one of them would leave nothing, the provider
 shows the unfiltered list instead of an empty screen.
 
 ### Readable torrent names
@@ -106,6 +110,7 @@ Checked against the live AniLiberty API:
 | *Frieren*, 1080p filter | 2 torrents |
 | *Dr. Stone: Ryusui* (movie) | not a batch, episode 1 |
 | Entry without a MAL ID (*Bocchi the Rock!*) | found by title, marked unconfirmed |
+| Ongoing show, episode not in the torrent yet (`1-11`, episode 12 requested) | empty list, Seanime retries later |
 | Title that isn't on AniLiberty | empty list, no errors |
 | Manual search "Dr. STONE" | all 17 torrents, the current season first |
 
