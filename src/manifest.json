@@ -1,11 +1,11 @@
 {
   "id": "aniliberty-plus",
   "name": "AniLiberty+",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "manifestURI": "https://raw.githubusercontent.com/Schirke/aniliberty-plus-seanime/main/src/manifest.json",
   "language": "typescript",
   "type": "anime-torrent-provider",
-  "description": "AniLiberty (AniLibria) с работающим Smart search: точный подбор сезона по MAL ID и фильтр по номеру серии",
+  "description": "AniLiberty (AniLibria) torrents with working Smart search: exact season matching by MAL ID and episode filtering",
   "author": "Schirke",
   "icon": "https://raw.githubusercontent.com/Schirke/aniliberty-plus-seanime/main/src/icon.png",
   "website": "https://anilibria.top",
