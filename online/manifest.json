@@ -1,14 +1,14 @@
 {
   "id": "aniliberty-plus-online",
   "name": "AniLiberty+ Online",
-  "version": "1.0.0",
-  "manifestURI": "https://raw.githubusercontent.com/Schirke/aniliberty-plus-seanime/main/online/manifest.json",
+  "version": "1.0.1",
+  "manifestURI": "https://raw.githubusercontent.com/Schirke-Seanime/aniliberty-plus-seanime/main/online/manifest.json",
   "language": "typescript",
   "type": "onlinestream-provider",
   "description": "Online streaming from AniLiberty (AniLibria): Russian dubs in 1080p, exact season matching by MAL ID, new episodes before the torrents",
   "author": "Schirke",
-  "icon": "https://raw.githubusercontent.com/Schirke/aniliberty-plus-seanime/main/src/icon.png",
+  "icon": "https://raw.githubusercontent.com/Schirke-Seanime/aniliberty-plus-seanime/main/src/icon.png",
   "website": "https://anilibria.top",
   "lang": "ru",
-  "payloadURI": "https://raw.githubusercontent.com/Schirke/aniliberty-plus-seanime/main/online/AniLibertyOnline.ts"
+  "payloadURI": "https://raw.githubusercontent.com/Schirke-Seanime/aniliberty-plus-seanime/main/online/AniLibertyOnline.ts"
 }

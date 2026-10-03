@@ -20,12 +20,12 @@ In Seanime, open **Extensions** → **Add extension** and paste the manifest URL
 
 **AniLiberty+ Online** (*Online streaming* tab):
 ```
-https://raw.githubusercontent.com/Schirke/aniliberty-plus-seanime/main/online/manifest.json
+https://raw.githubusercontent.com/Schirke-Seanime/aniliberty-plus-seanime/main/online/manifest.json
 ```
 
 **AniLiberty+** (*Torrent streaming* tab, turn **Smart search** on):
 ```
-https://raw.githubusercontent.com/Schirke/aniliberty-plus-seanime/main/src/manifest.json
+https://raw.githubusercontent.com/Schirke-Seanime/aniliberty-plus-seanime/main/src/manifest.json
 ```
 
 If you have the original **AniLiberty** extension installed, disable it to avoid duplicate torrents.
